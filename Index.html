@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy Bird Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen" class="overlay">
+    <img src="https://img.icons8.com/color/96/duck.png" class="duck" />
+    <h2>Hey there! Try this game!</h2>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="game-over-screen" class="overlay">
+    <img src="https://img.icons8.com/color/96/duck.png" class="duck" />
+    <h2>That was a good try!</h2>
+    <p>Your score: <span id="final-score">0</span></p>
+    <button onclick="restartGame()">Try Again</button>
+  </div>
+
+  <div id="score-display">
+    <p>Top Scores: <span id="high-scores">0, 0, 0</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
